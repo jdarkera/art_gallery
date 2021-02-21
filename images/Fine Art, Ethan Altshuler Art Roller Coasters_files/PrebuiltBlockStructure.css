@@ -1,0 +1,280 @@
+
+/* Prebuilt Block Structures */
+
+/* Image Above Text */
+.TitleIAT {
+	display:none;
+}
+
+.ImageIAT {
+	width: auto;
+}
+
+.TextIAT {   
+	width:98%;
+	float:left;
+}
+
+/* start IE7  */
+*+html .TextIAT {
+	width:96%;
+	height:auto;
+}
+/* end IE7  */
+
+
+
+/* Image Left Text Right */
+.TitleILTR {
+	display:none;
+}
+  
+.ImageILTR {
+	float:left;
+}
+
+.TextILTR {
+	height:auto !important;
+}
+
+.WidthILTR {
+	width:98%;
+}
+
+/* start IE7 Hack  */
+*+html .WidthILTR {
+	width:96%;
+	height:auto;
+
+}
+*+html .TextILTR {
+	height:auto;
+}
+/* end IE7  */
+
+
+/* Image Right Text Left */
+.TitleIRTL {
+	display:none;
+}
+
+.ImageIRTL {
+	float:Right;
+
+}
+
+.TextIRTL {
+	height:auto !important;
+}
+
+.WidthIRTL {
+	width:96%;
+}
+/* start IE7 Hack  */
+*+html .WidthIRTL {
+	width:96%;
+	height:auto;
+}
+*+html .TextIRTL {
+	height:auto;
+}
+/* end IE7  */
+
+
+/* Image Left Text Wrapped */
+.TitleILTW {
+	display:none;
+}
+
+.ImageILTW {
+	float:left;
+
+}       
+
+.TextILTW {
+	overflow: visible !important;
+}     
+
+
+
+/* Image Right Text Wrapped */
+.TitleIRTW {
+	display:none;
+}
+
+.ImageIRTW {
+	float:right;
+}
+                                        
+.TextIRTW {
+	overflow: visible !important;   
+}
+
+
+
+/* Title Above Text */
+.TitleTAT {
+	display:block;
+	width:96%;
+	font-weight:bold;
+}
+
+.ImageTAT {
+	display:none;
+}
+
+.TextTAT {
+	width:98%;
+}
+/* start IE7 Hack  */
+*+html .TitleTAT {
+	width:96%;
+	
+}
+
+*+html .TextTAT {
+	width:96%;
+	height:auto;
+}
+/* end IE7 Hack  */
+
+
+
+/* Title Above Image and Text */
+.TitleTAIT {
+	display:block;
+	width:96%;
+	font-weight:bold;
+}
+
+/* start IE7 Hack  */
+*+html .TitleTAIT {
+	width:96%;
+}
+/* end IE7 Hack  */
+
+
+
+/*mfox: FIX TR 106708 - LC - Image alignment does not update immediately*/
+.ImageTAIT {
+	margin: auto;
+}
+
+.ImageAIT {
+	margin: auto;  
+}
+
+.ns-image-align-right {
+	float: right;
+}
+
+.ns-image-align-left {
+	float: left;
+}
+
+.ns-image-align-center{
+	/*nothing to do*/
+	margin: auto;
+}
+
+
+/* Title Above Image Left Text Right */
+.TitleTAILTR {
+	display:block;
+	width:96%;
+	font-weight:bold;
+}
+
+.ImageTAILTR {
+	float:left;
+}
+
+.TextTAILTR {
+}
+
+.WidthTAILTR {
+	width:98%;
+}
+
+/* start IE7  */
+*+html .TitleTAILTR {
+	width:96%;
+}
+*+html .WidthTAILTR {
+	width:96%;
+	height:auto;
+}
+/* end IE7  */
+
+
+
+/* Title Above Image Right Text Left */
+.TitleTAIRTL {
+	display:block;
+	width:96%;
+	font-weight:bold;
+}
+
+.ImageTAIRTL {
+	float:Right;
+}
+
+.TextTAIRTL {
+}
+
+.WidthTAIRTL {
+	width:98%;
+}
+
+/* start IE7 Hack  */
+*+html .TitleTAIRTL {
+	width:96%;
+}
+*+html .WidthTAIRTL {
+	width:96%;
+	height:auto;
+}
+/* end IE7 Hack  */
+
+
+/* Title Above Image Left Text Wrapped */
+.TitleTAILTW {
+	display:block;
+	width:96%;
+	font-weight:bold;
+}
+
+.ImageTAILTW {
+	float:left;
+	height:auto;
+}
+
+.TextTAILTW {
+	overflow: visible !important;  
+}
+/* start IE7 Hack  */
+*+html .TitleTAILTW {
+	width:96%;
+}
+/* end IE7 Hack  */
+
+
+/* Title Above Image Right Text Wrapped */
+.TitleTAIRTW {
+	display:block;
+	width:96%;
+	font-weight:bold;
+}
+
+.ImageTAIRTW {
+	float:right;
+}
+
+.TextTAIRTW {
+	overflow: visible !important; 
+}
+/* start IE7 Hack Title Above Text */
+*+html .TitleTAIRTW {
+	width:96%;
+}
+/* end IE7 Hack Title Above Text */

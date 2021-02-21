@@ -1,0 +1,209 @@
+/*
+**  Template.css
+**
+**	Default Layout
+**
+*/
+
+* {
+	padding: 0;
+	margin: 0;
+}
+
+html, body {
+	height: 100%;
+}
+
+/** html a {
+	position: relative;
+}*/
+
+/* submenu */
+div.submenu {
+	display: none;
+}
+
+/* template main wrapper */
+#wb-container-outer {
+	background-image: url(../images/layout1/background.jpg);
+	background-position: top left;
+	background-repeat: repeat;
+	min-height:100%;
+	height:auto !important;
+	height: 100%;
+	padding-bottom: 20px;
+} 	
+
+#wb-container-inner {
+}
+
+#wb-layout {
+	width:780px;
+	margin: 0 auto;
+}
+
+#wb-layout-inner {
+	width:780px;
+}
+
+/* WB-LAYOUT-HEADER: This is the header section */
+#wb-layout-header {
+	background-color: transparent;
+	background-image: url(../images/layout1/header.jpg);
+	background-position: top center;
+	background-repeat: no-repeat;
+	width:780px;
+	height:172px;
+	overflow: hidden;
+}			
+
+#wb-layout-header-mask {
+	width:780px;
+}
+
+#wb-layout-header-base {
+	display: none;
+}
+/* END HEADER */
+
+/* WB-LAYOUT-TOP-5: for designs that have navigation between the header and content
+**  Layout 7
+*/
+
+	#wb-layout-top-header, #wb-header-nav {
+		display: none;
+    }
+/* WB-LAYOUT-TOP-2: for designs that have navigation between the header and content
+**	Layout 3
+*/
+#wb-layout-top-2 {
+}
+
+#wb-navigation-subtop {
+	display: none;
+	overflow: hidden;
+}
+
+#wb-navigation-subtop div {
+   	float: left;
+	height: 25px;
+	padding: 5px 10px 0px;
+}
+
+	/* top submenu */
+	#wb-navigation-subtop div.submenu {
+		height: auto;
+		border: 0px;
+		padding: 0px;
+		width: 150px;
+		background-color: #000000;
+	}
+	
+	#wb-navigation-subtop div.submenu div {
+		float: none;
+		border: 0px;
+		padding: 5px 10px;
+	}
+/* END top submenu */
+					
+#wb-top-subbasenav {
+	width: 780px;
+	height: 31px;
+	background-image: url(../images/layout1/content-top-left.gif);
+	background-repeat: no-repeat;
+	background-position: top center;
+}
+/* END WB-LAYOUT-TOP-2 */
+
+
+/* WB-CONTAINER-CONTENTWRAPPER: This wraps the content area of the site
+*	ALL Layouts
+*/
+#wb-container-contentwrapper {
+	width:780px;
+	height: 100%;
+	background-color: #ffffff;
+	background-image: url(../images/layout1/content-background-left.gif);
+	background-repeat: repeat-y;
+	background-position: top left;
+	padding-bottom: 10px;
+}
+
+	/* SIDEBAR is for designs that have a left or right column built in
+	**	Layout 1
+	**	Layout 2
+	*/
+	#wb-layout-sidebar {
+		float: left;
+		width: 152px;
+	}
+
+	/* sidebar navigation */
+		#wb-navigation {
+		}
+			#wb-navigation-top {
+			} 
+			#wb-navigation-bottom {
+			}
+				/* SIDEBAR NAVIGATION STRUCTURE
+				**	Layout 1
+				**	Layout 2
+				*/
+				#wb-navigation-bottom div {
+				}
+				#wb-navigation-bottom div a {
+					background-image: url(../images/layout1/list-background.gif);
+					background-position: top center;
+					background-repeat: no-repeat;
+					display: block;
+					height: 34px;
+					width: 132px;
+					text-decoration: none;
+					padding: 4px 0 0 20px;
+				}
+					#wb-navigation-bottom div a:hover {
+						background-position: bottom center;
+					}
+
+				#wb-navigation-bottom div.submenu {
+				}
+				#wb-navigation-bottom div.submenu div {            
+				}
+				
+				#wb-navigation-bottom div a h3  {
+					width:130px;
+					}
+				
+				/* END SIDEBAR NAVIGATION STRUCTURE */
+
+	#wb-basenav {
+	}
+
+	#wb-navbasewrap {
+	}
+	/* END SIDEBAR */
+
+	
+	/* MAIN-CONTENT AREA
+	**	ALL Layouts
+	*/
+	#wb-layout-main {
+		width:611px;
+		float: right;
+		padding: 5px 12px 10px 5px;
+	}
+	/* END MAIN CONTENT AREA */
+	
+/* END WB-CONTAINER-CONTENTWRAPPER */
+
+
+/* Page FOOTER
+**
+**	ALL Layouts
+*/
+#wb-layout-footer {
+	background-image: url('../images/layout1/footer.gif');
+	background-position: top center;
+	background-repeat: no-repeat;
+	width: 780px;	
+}

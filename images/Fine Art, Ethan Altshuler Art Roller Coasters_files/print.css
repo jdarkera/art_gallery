@@ -1,0 +1,8 @@
+#wb-layout-sidebar, #wb-navigation-subtop {
+	display:none
+	}
+#wb-layout-main, #wb-layout-main-inner-1, #wb-layout-main-inner-2 div {
+	overflow:visible !important;
+	width:100% !important;
+	height:100% !important;
+	}	

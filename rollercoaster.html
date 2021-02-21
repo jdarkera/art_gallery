@@ -1,0 +1,762 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en-US">
+    <head http-equiv="content-type" content="text/html; charset=utf-8">
+        	<!-- Stylesheets
+        ============================================= -->
+        <link href="https://fonts.googleapis.com/css?family=Lato:300,400,400i,700|Poppins:300,400,500,600,700|PT+Serif:400,400i&display=swap" rel="stylesheet" type="text/css" />
+        <link rel="stylesheet" href="assets/css/bootstrap.css" type="text/css" />
+        <link rel="stylesheet" href="assets/style.css" type="text/css" />
+        <link rel="stylesheet" href="assets/css/dark.css" type="text/css" />
+        <link rel="stylesheet" href="assets/css/font-icons.css" type="text/css" />
+        <link rel="stylesheet" href="assets/css/animate.css" type="text/css" />
+        <link rel="stylesheet" href="assets/css/magnific-popup.css" type="text/css" />
+        <link rel="stylesheet" href="assets/css/custom.css" type="text/css" />
+        <!-- Meta Tags -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta property="og:locale" content="en_US">
+        <meta property="og:type" content="website">
+        <meta property="og:title" content="Master | ethanAart" />
+        <meta property="og:description" content="Master art by Ethan Altshuler created during his childhood">
+        <meta property="og:url" content="https://ethanaart.com/">
+        <meta property="og:site_name" content="ethanAart.com">
+        <meta property="og:image" content="https://ethanAart.com/images/og-color-logo-ethanaart.jpg" />
+        <title> Master | ethanAart </title>
+        <meta name="description" content=" Master art by Ethan Altshuler created during his childhood"/>
+        <meta name="keywords" content="Master art, childhood" />
+        <meta name="robots" content="all,follow" />
+        <meta name="googlebot" content="index,follow,snippet,archive" />
+        <meta name="twitter:card" content="https://ethanAart.com/images/og-color-logo-ethanaart.jpg">
+        <meta name="twitter:title" content=" Master | ethanAart ">
+        <meta name="twitter:url" content=" https://ethanaart.com/Master.html"/>
+        <meta name="twitter:description" content=" Master art by Ethan Altshuler created during his
+        childhood ">
+        <meta name="twitter:image" content=" https://ethanAart.com/images/og-color-logo-ethanaart.jpg"/>
+
+        <link rel="shortcut icon" href="/favicon.ico"/>
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-130204150-1"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'UA-130204150-1');
+        </script>
+        <style>
+            .side-header #logo img {height: auto;}
+            
+            #content {
+                /* Prevent vertical gaps */
+                line-height: 0;
+                
+                -webkit-column-count: 5;
+                -webkit-column-gap:   0px;
+                -moz-column-count:    5;
+                -moz-column-gap:      0px;
+                column-count:         5;
+                column-gap:           0px;  
+            }
+
+            #content img {
+                /* Just in case there are inline attributes */
+                width: 100% !important;
+                height: auto !important;
+                padding: 5px;
+            }
+            
+
+            /* The Modal (background) */
+            .modal {
+            display: none;
+            position: fixed;
+            z-index: 1;
+            padding-top: 100px;
+            left: 250px;
+            top: 0;
+            width: 83%;
+            max-width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: black;
+            }
+
+            /* Modal Content */
+            .modal-content {
+            position: relative;
+            background-color: #fefefe;
+            margin: auto;
+            padding: 0;
+            width: 90%;
+            height: 90%;
+            max-width: 1200px;
+            }
+
+            /* The Close Button */
+            .close {
+            color: white;
+            position: absolute;
+            top: 10px;
+            right: 25px;
+            font-size: 35px;
+            font-weight: bold;
+            }
+
+            .close:hover,
+            .close:focus {
+            color: #999;
+            text-decoration: none;
+            cursor: pointer;
+            }
+
+            /* Hide the slides by default */
+            .mySlides {
+                display: none;
+                text-align: center;
+                margin: auto;
+            }
+
+            /* Next & previous buttons */
+            .prev,
+            .next {
+                cursor: pointer;
+                position: absolute;
+                top: 50%;
+                width: auto;
+                padding: 16px;
+                margin-top: -50px;
+                color: white;
+                font-weight: bold;
+                font-size: 20px;
+                transition: 0.6s ease;
+                border-radius: 0 3px 3px 0;
+                user-select: none;
+                -webkit-user-select: none;
+            }
+
+            /* Position the "next button" to the right */
+            .next {
+                right: 0;
+                border-radius: 3px 0 0 3px;
+            }
+
+            /* On hover, add a black background color with a little bit see-through */
+            .prev:hover,
+            .next:hover {
+                background-color: rgba(0, 0, 0, 0.8);
+            }
+
+            /* Number text (1/3 etc) */
+            .numbertext {
+                color: #f2f2f2;
+                font-size: 12px;
+                padding: 8px 12px;
+                position: absolute;
+                top: 0;
+            }
+
+            /* Caption text */
+            .caption-container {
+                text-align: center;
+                background-color: black;
+                padding: 2px 16px;
+                color: white;
+            }
+
+            img.hover-shadow {
+                transition: 0.3s;
+            }
+
+            .hover-shadow:hover {
+                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            }
+
+            #content .imgContent {
+                position: relative;
+                vertical-align: bottom;
+            }
+
+            #content a span {
+                display: none;
+                position: absolute;
+                bottom: 0;
+                left:0;
+                width: 100%;
+                height: auto;
+                padding: 20px;
+                padding-bottom: 40px;
+                font-size: 1vw;
+                background: rgba(255,255,255,.8);
+                word-wrap: break-word;
+                
+            }
+
+            #content a:hover span {
+                display: block
+            }
+
+            @media (max-width: 1200px) {
+                #content {
+                    -moz-column-count:    4;
+                    -webkit-column-count: 4;
+                    column-count:         4;
+                }
+            }
+            @media (max-width: 1000px) {
+                #content {
+                    -moz-column-count:    3;
+                    -webkit-column-count: 3;
+                    column-count:         3;
+                }
+                .modal{
+                    left: 0;
+                    width: 100%;
+                }
+            }
+            @media (max-width: 800px) {
+                #content {
+                    -moz-column-count:    2;
+                    -webkit-column-count: 2;
+                    column-count:         2;
+                }
+                .modal{
+                    left: 0;
+                    width: 100%;
+                }
+            }
+            @media (max-width: 400px) {
+                #content {
+                    -moz-column-count:    1;
+                    -webkit-column-count: 1;
+                    column-count:         1;
+                }
+                .modal{
+                    left: 0;
+                    width: 100%;
+                }
+            }
+        </style>
+    </head>
+
+    <body class="stretched side-header">
+        <div id="wrapper" class="clearfix">
+            <header id="header">
+                <div id="header-wrap">
+                    <div class="container">
+                        <div class="header-row justify-content-between">
+                            <div id="logo">
+                                <a href="index.html" class="standard-logo" data-dark-logo="../images/350_colorLogo.jpg">
+                                    <img src="images/350_colorLogo.jpg" alt="Ethan Altshuler myclone.page Logo">
+                                </a>
+                                <a href="index.html" class="retina-logo" data-dark-logo="../images/350_colorLogo.jpg">
+                                    <img src="images/350_colorLogo.jpg" alt="Ethan Altshuler myclone.page Logo">
+                                </a>
+                            </div>
+                            <!-- #logo end -->
+                            <div id="primary-menu-trigger">
+                                <svg class="svg-trigger" viewBox="0 0 100 100">
+                                    <path d="m 30,33 h 40 c 3.722839,0 7.5,3.126468 7.5,8.578427 0,5.451959 -2.727029,8.421573 -7.5,8.421573 h -20"></path>
+                                    <path d="m 30,50 h 40"></path>
+                                    <path d="m 70,67 h -40 c 0,0 -7.5,-0.802118 -7.5,-8.365747 0,-7.563629 7.5,-8.634253 7.5,-8.634253 h 20"></path>
+                                </svg>
+                            </div>
+                            <div class="header-misc d-none d-sm-block">
+                                <img src="images/119_Sketching_at_the_bluffs_6_.jpg" alt="" style="" border="0">
+                                <div class="d-flex my-lg-3">
+                                    <a href="https://www.facebook.com/ethanAart/" class="social-icon si-small si-borderless si-facebook">	<i class="icon-facebook"></i>
+                                        <i class="icon-facebook"></i>
+                                    </a>
+                                    <a href="https://www.instagram.com/ethanaart/" class="social-icon si-small si-borderless si-pinterest">	<i class="icon-instagram"></i>
+                                        <i class="icon-instagram"></i>
+                                    </a>
+                                    <a href="https://ethanaart.shop/" class="social-icon si-small si-borderless si-github">	<i class="icon-store"></i>
+                                        <i class="icon-store"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <nav class="primary-menu on-click">
+                                <ul class="menu-container">
+                                    <li class="menu-item">
+                                        <a class="menu-link" href="3dart.html">
+                                            <div>3-D Art</div>
+                                        </a>
+                                    </li>
+                                    <li class="menu-item">
+                                        <a class="menu-link" href="#">
+                                            <div>About Ethan</div>
+                                        </a>
+                                        <ul class="sub-menu-container">
+                                            <li class="menu-item">
+                                                <a class="menu-link" href="aboutethan.html">
+                                                    <div>Young Ethan</div>
+                                                </a>
+                                            </li>
+                                            <li class="menu-item">
+                                                <a class="menu-link" href="ethanentersmidteens.html">
+                                                    <div>Ethan Enters Mid-Teens</div>
+                                                </a>
+                                            </li>
+                                            <li class="menu-item">
+                                                <a class="menu-link" href="ethaninaction.html">
+                                                    <div>Ethan In Action</div>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="menu-item">
+                                        <a class="menu-link" href="abstract.html">
+                                            <div>Abstract</div>
+                                        </a>
+                                    </li>
+                                    <li class="menu-item">
+                                        <a class="menu-link" href="accolades.html">
+                                            <div>Accolades</div>
+                                        </a>
+                                    </li>
+                                    <li class="menu-item">
+                                        <a class="menu-link" href="airplanes.html">
+                                            <div>Airplanes</div>
+                                        </a>
+                                    </li>
+                                    <li class="menu-item">
+                                        <a class="menu-link" href="#">
+                                            <div>Animal, Nature & Planets</div>
+                                        </a>
+                                        <ul class="sub-menu-container">
+                                            <li class="menu-item">
+                                                <a class="menu-link" href="animalkingdom.html">
+                                                    <div>Animal Kingdom</div>
+                                                </a>
+                                            </li>
+                                            <li class="menu-item">
+                                                <a class="menu-link" href="animalsnatureplanets.html">
+                                                    <div>Animals, Nature & Planets</div>
+                                                </a>
+                                            </li>
+                                            <li class="menu-item">
+                                                <a class="menu-link" href="dog-planes.html">
+                                                    <div>Dog Planes</div>
+                                                </a>
+                                            </li>
+                                            <li class="menu-item">
+                                                <a class="menu-link" href="dogs-in-flight.html">
+                                                    <div>Dogs in Flight</div>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="menu-item">
+                                        <a class="menu-link" href="animationprojects.html">
+                                            <div>Early Animation Projects</div>
+                                        </a>
+                                    </li>
+                                    <li class="menu-item">
+                                        <a class="menu-link" href="artforsale.html">
+                                            <div>Art for Sale</div>
+                                        </a>
+                                    </li>
+                                    <li class="menu-item">
+                                        <a class="menu-link" href="charity.html">
+                                            <div>Charity</div>
+                                        </a>
+                                    </li>
+                                    <li class="menu-item">
+                                        <a class="menu-link" href="commissioned.html">
+                                            <div>Commissioned Art</div>
+                                        </a>
+                                    </li>
+                                    <li class="menu-item">
+                                        <a class="menu-link" href="ethansphotoshops.html">
+                                            <div>Photoshops</div>
+                                        </a>
+                                    </li>
+                                    <li class="menu-item">
+                                        <a class="menu-link" href="holidaycards.html">
+                                            <div>Holiday Cards</div>
+                                        </a>
+                                    </li>
+                                    <li class="menu-item">
+                                        <a class="menu-link" href="homelife.html">
+                                            <div>Home Life</div>
+                                        </a>
+                                    </li>
+                                    <li class="menu-item">
+                                        <a class="menu-link" href="masters.html">
+                                            <div>Masters</div>
+                                        </a>
+                                    </li>
+                                    <li class="menu-item">
+                                        <a class="menu-link" href="newsletters.html">
+                                            <div>Newsletters</div>
+                                        </a>
+                                    </li>
+                                    <li class="menu-item">
+                                        <a class="menu-link" href="nicaraguatrip.html">
+                                            <div>Nicaragua Trip</div>
+                                        </a>
+                                    </li>
+                                    <li class="menu-item">
+                                        <a class="menu-link" href="perspective.html">
+                                            <div>Perspective</div>
+                                        </a>
+                                    </li>
+                                    <li class="menu-item">
+                                        <a class="menu-link" href="#">
+                                            <div>Pop Culture</div>
+                                        </a>
+                                        <ul class="sub-menu-container">
+                                            <li class="menu-item">
+                                                <a class="menu-link" href="#">
+                                                    <div>Despicable Me</div>
+                                                </a>
+                                                <ul class="sub-menu-container">
+                                                    <li class="menu-item">
+                                                        <a class="menu-link" href="despicablemeanimation.html">
+                                                            <div>Despicable Me Animation</div>
+                                                        </a>
+                                                    </li>
+                                                    <li class="menu-item">
+                                                        <a class="menu-link" href="despicablemecomics.html">
+                                                            <div>Despicable Me Comics</div>
+                                                        </a>
+                                                    </li>
+                                                    <li class="menu-item">
+                                                        <a class="menu-link" href="despicablemeideas.html">
+                                                            <div>Despicable Me Ideas</div>
+                                                        </a>
+                                                    </li>
+                                                    <li class="menu-item">
+                                                        <a class="menu-link" href="despicablemestoryboards.html">
+                                                            <div>Despicable Me Story Boards</div>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li class="menu-item">
+                                                <a class="menu-link" href="familyguy.html">
+                                                    <div>Family Guy</div>
+                                                </a>
+                                            </li>
+                                            <li class="menu-item">
+                                                <a class="menu-link" href="hungergames.html">
+                                                    <div>Hunger Games</div>
+                                                </a>
+                                            </li>
+                                            <li class="menu-item">
+                                                <a class="menu-link" href="powerboystory.html">
+                                                    <div>Power Boy Story</div>
+                                                </a>
+                                            </li>
+                                            <li class="menu-item">
+                                                <a class="menu-link" href="rocknroll.html">
+                                                    <div>Rock n' Roll</div>
+                                                </a>
+                                            </li>
+                                            <li class="menu-item">
+                                                <a class="menu-link" href="linkinpark.html">
+                                                    <div>Linkin Park</div>
+                                                </a>
+                                            </li>
+                                    <li class="menu-item">
+                                        <a class="menu-link" href="tshirtdesigns.html">
+                                            <div>Early T-Shirt Designs</div>
+                                        </a>
+                                    </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+                <div class="header-wrap-clone"></div>
+            </header>
+            <section id="page-title">
+                <div class="container clearfix">
+                    <h1>Roller Coasters</h1>
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="#">Home</a>
+                        </li>
+                        <li class="breadcrumb-item active" aria-current="page">Roller Coaster</li>
+                    </ol>
+                </div>
+            </section>
+           <div class="tz-gallery"> 
+            <section id="content">
+                <a class="imgContent">
+                    <img src="images/754_crol0001.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow" />
+                    <span>Colorful Ride</span>
+                </a>
+                <a class="imgContent">
+                    <img src="images/754_crol0002.jpg"  onclick="openModal();currentSlide(2)" class="hover-shadow" />
+                    <span>Blue, Bird & Blimp</span>
+                </a>
+                <a class="imgContent">
+                    <img src="images/754_crol0003.jpg" onclick="openModal();currentSlide(3)" class="hover-shadow" />
+                    <span>Ice Cream Cones & Bicycle Coaster</span>
+                </a>
+                <a class="imgContent">
+                    <img src="images/754_rol004.jpg" onclick="openModal();currentSlide(4)" class="hover-shadow" />
+                    <span>Skate Board Coaster</span>
+                </a>
+                <a class="imgContent">
+                    <img src="images/754_rol0005.jpg" onclick="openModal();currentSlide(5)" class="hover-shadow" />
+                    <span>Moon, Blimp & Dogs Nearby</span>
+                </a>
+                <a class="imgContent">
+                    <img src="images/720_rol0006.jpg" onclick="openModal();currentSlide(6)" class="hover-shadow" />
+                    <span>4 Trees Near Coaster</span>
+                </a>
+                <a class="imgContent">
+                    <img src="images/754_rol0007.jpg" onclick="openModal();currentSlide(7)" class="hover-shadow" />
+                    <span>Blue Whale</span>
+                </a>
+                <a class="imgContent">
+                    <img src="images/754_rol0008.jpg" onclick="openModal();currentSlide(8)" class="hover-shadow" />
+                    <span>Cheesy House Coaster</span>
+                </a>
+                <a class="imgContent">
+                    <img src="images/754_rol0009.jpg" alt="rol0009" onclick="openModal();currentSlide(9)" class="hover-shadow" />
+                    <span>North Pacific Park</span>
+                </a>
+                <a class="imgContent">
+                    <img src="images/753_rol0010.jpg" alt="rol0010" onclick="openModal();currentSlide(10)" class="hover-shadow" />
+                    <span>Mouse Near Cheesy House</span>
+                </a>
+                <a class="imgContent">
+                    <img src="images/642_rol0011.jpg" alt="rol0011" onclick="openModal();currentSlide(11)" class="hover-shadow" />
+                    <span>Sea Serpent <---> Dark Abyss</span>
+                </a>
+                <a class="imgContent">
+                    <img src="images/750_rol0012.jpeg" alt="rol0012" onclick="openModal();currentSlide(12)" class="hover-shadow" />
+                    <span>Wafeel</span>
+                </a>
+                <a class="imgContent">
+                    <img src="images/754_rol0013.jpg" alt="rol0013" onclick="openModal();currentSlide(13)" class="hover-shadow" />
+                    <span>Cyclone</span>
+                </a>
+                <a class="imgContent">
+                    <img src="images/754_rol0014.jpg" alt="rol0014" onclick="openModal();currentSlide(14)" class="hover-shadow" />
+                    <span>May 2016</span>
+                </a>
+                <a class="imgContent">
+                    <img src="images/754_rol0015.jpg" alt="rol0015" onclick="openModal();currentSlide(15)" class="hover-shadow" />
+                    <span>Spring 2016</span>
+                </a>
+                <a class="imgContent">
+                    <img src="images/754_rol0016.jpg" alt="rol0016" onclick="openModal();currentSlide(16)" class="hover-shadow" />
+                    <span>2020</span>
+                </a>
+                <a class="imgContent">
+                    <img src="images/754_Copy_of_rol0017.jpg" alt="roll0017" onclick="openModal();currentSlide(17)" class="hover-shadow" />
+                    <span>Go! Go!</span>
+                </a>
+                <a class="imgContent">
+                    <img src="images/754_Copy_of_rol0018.jpg" alt="rol0018" onclick="openModal();currentSlide(18)" class="hover-shadow" />
+                    <span>Cedar Point</span>
+                </a>
+                <a class="imgContent">
+                    <img src="images/754_erol0019.jpg" alt="rol0019" onclick="openModal();currentSlide(19)" class="hover-shadow" />
+                    <span>Mad Mouse roller coaster</span>
+                </a>
+                <a class="imgContent">
+                    <img src="images/754_google_rol0020.jpg" alt="rol0020" onclick="openModal();currentSlide(20)" class="hover-shadow"/>
+                    <span>Google Contest Entry 2013 Cedar Point Roller Coaster Park</span>
+                </a>
+                <a class="imgContent">
+                    <img src="images/754_roller_coaster_12-23.png" alt="rol0021" onclick="openModal();currentSlide(21)" class="hover-shadow" />
+                    <span>Digital Art Created with Paintbrush 12-23-13</span>
+                </a>
+                <div id="myModal" class="modal">
+                    <span class="close cursor" onclick="closeModal()">&times;</span>
+                    <div class="modal-content">
+                        <div class="mySlides">
+                            <div class="numbertext">1/21</div>
+                            <img src="images/754_crol0001.jpg" alt="rol0001">
+                        </div>
+                        <div class="mySlides">
+                            <div class="numbertext">2/21</div>
+                            <img src="images/754_crol0002.jpg" alt="rol0002">
+                        </div>
+                        <div class="mySlides">
+                            <div class="numbertext">3/21</div>
+                            <img src="images/754_crol0003.jpg" alt="rol0003">
+                        </div>
+                        <div class="mySlides">
+                            <div class="numbertext">4/21</div>
+                            <img src="images/754_rol004.jpg" alt="rol0004">
+                        </div>
+                        <div class="mySlides">
+                            <div class="numbertext">5/21</div>
+                            <img src="images/754_rol0005.jpg" alt="rol0005">
+                        </div>
+                        <div class="mySlides">
+                            <div class="numbertext">6/21</div>
+                            <img src="images/720_rol0006.jpg" alt="roll0006">
+                        </div>
+                        <div class="mySlides">
+                            <div class="numbertext">7/21</div>
+                            <img src="images/754_rol0007.jpg" alt="rol0007">
+                        </div>
+                        <div class="mySlides">
+                            <div class="numbertext">8/21</div>
+                            <img src="images/754_rol0008.jpg" alt="rol0008">
+                        </div>
+                        <div class="mySlides">
+                            <div class="numbertext">9/21</div>
+                            <img src="images/754_rol0009.jpg" alt="rol0009">
+                        </div>
+                        <div class="mySlides">
+                            <div class="numbertext">10/21</div>
+                            <img src="images/753_rol0010.jpg" alt="rol0010">
+                        </div>
+                        <div class="mySlides">
+                            <div class="numbertext">11/21</div>
+                            <img src="images/642_rol0011.jpg" alt="rol0011">
+                        </div>
+                        <div class="mySlides">
+                            <div class="numbertext">12/21</div>
+                            <img src="images/750_rol0012.jpeg" alt="roll0012">
+                        </div>
+                        <div class="mySlides">
+                            <div class="numbertext">13/21</div>
+                            <img src="images/754_rol0013.jpg" alt="rol0013">
+                        </div>
+                        <div class="mySlides">
+                            <div class="numbertext">14/21</div>
+                            <img src="images/754_rol0014.jpg" alt="rol0014">
+                        </div>
+                        <div class="mySlides">
+                            <div class="numbertext">15/21</div>
+                            <img src="images/754_rol0015.jpg" alt="rol0015">
+                        </div>
+                        <div class="mySlides">
+                            <div class="numbertext">16/21</div>
+                            <img src="images/754_rol0016.jpg" alt="rol0016">
+                        </div>
+                        <div class="mySlides">
+                            <div class="numbertext">17/21</div>
+                            <img src="images/754_Copy_of_rol0017.jpg" alt="rol0017">
+                        </div>
+                        <div class="mySlides">
+                            <div class="numbertext">18/21</div>
+                            <img src="images/754_Copy_of_rol0018.jpg" alt="rol0018">
+                        </div>
+
+                        <div class="mySlides">
+                            <div class="numbertext">19/21</div>
+                            <img src="images/754_erol0019.jpg" alt="rol0019">
+                        </div>
+
+                        <div class="mySlides">
+                            <div class="numbertext">20/21</div>
+                            <img src="images/754_google_rol0020.jpg" alt="rol0020">
+                        </div>
+                        <div class="mySlides">
+                            <div class="numbertext">21/21</div>
+                            <img src="images/754_roller_coaster_12-23.png" alt="rol0021">
+                        </div>
+                    </div>
+
+                    <!-- Next/previous controls -->
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+                    <!-- Caption text -->
+                    <div class="caption-container">
+                        <p id="caption"></p>
+                    </div>
+                </div>
+            </section>
+        </div> 
+            <!-- #content end -->
+
+            <footer id="footer" class="dark">
+                <div id="copyrights">
+                    <div class="container">
+                        <div class="row col-mb-30">
+                            <div class="col-md-6 text-center text-md-left">Copyright &copy; ethanAart 2021 All Rights Reserved
+                                <br>
+                                <div class="copyright-links"><a href="#">Developed in association with Westcliff University Web Development Boot Camp</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- #copyrights end -->
+            </footer>
+            <!-- #footer end -->
+        </div>
+        <!-- #wrapper end -->
+        <div id="gotoTop" class="icon-angle-up"></div>
+        <script src="js/jquery.js"></script>
+        <script src="js/plugins.min.js"></script>
+        <script src="assets/js/functions.js"></script>
+        <style>
+            ol.flex-control-nav li:hover a, ol.flex-control-nav li a.flex-active {
+                background-color: #383838;
+            }
+            ol.flex-control-nav li a {
+                border: 1px solid #383838;
+            }
+            @media screen and (min-width:480px){
+            #wowslider-container1 {
+                height: 700px;
+                }
+            }
+        </style>
+        <!--disable right click and copy & paste-->
+        <script type="text/javascript">
+            $(document).ready(function(){$("body").bind("cut copy paste",function(n){n.preventDefault()}),$("body").on("contextmenu",function(n){return!1})});
+        </script>
+        <!-- init Masonry --> 
+        <script>
+            /*
+            var $grid = $('.grid').masonry({
+                itemSelector: '.grid-item',
+                percentPosition: true,
+                columnWidth: '.grid-sizer'
+            });
+            // layout Masonry after each image loads
+            $grid.imagesLoaded().progress( function() {
+                $grid.masonry();
+            });*/
+        </script>
+        <script>
+            // Open the Modal
+            function openModal(e) {
+                document.getElementById("myModal").style.display = "block";
+            }
+            
+            // Close the Modal
+            function closeModal() {
+                document.getElementById("myModal").style.display = "none";
+            }
+            
+            var slideIndex = 1;
+                showSlides(slideIndex);
+            
+            // Next/previous controls
+            function plusSlides(n) {
+                showSlides(slideIndex += n);
+            }
+
+            // Thumbnail image controls
+            function currentSlide(n) {
+                showSlides(slideIndex = n);
+            }
+            
+            function showSlides(n) {
+                var i;
+                var slides = document.getElementsByClassName("mySlides");
+                var captionText = document.getElementById("caption");
+                
+                if (n > slides.length) {slideIndex = 1}
+                if (n < 1) {slideIndex = slides.length}
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                }
+                slides[slideIndex-1].style.display = "block";
+                document.getElementById("caption").innerHTML= slides[slideIndex-1].getElementsByTagName("img")[0].alt;
+            }
+        // baguetteBox.run('.tz-gallery');
+        </script>
+    </body>
+</html>
