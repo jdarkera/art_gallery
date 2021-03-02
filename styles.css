@@ -333,9 +333,77 @@ tbody a:visited {
   }
   
   /* mouse over link */
-
+   tbody a:hover {
+    color: hotpink;
+  } 
   
   /* selected link */
 tbody a:active {
     color: blue;
   }
+/* Roller Coaster */ 
+.side-header #logo img {
+    height: auto !important;
+}
+
+.side-header #logo img {
+    height: auto !important;
+}
+.carousel-control-next-icon, 
+.carousel-control-prev-icon{
+    filter: invert(1);
+} 
+.carousel-control-prev,
+.carousel-control-next{
+    height: 50%;
+}
+.carousel-inner{
+    width:700px;
+    height: auto;
+    margin: 0 auto;
+}
+#custCarousel{
+    margin-top: 20px;
+}
+
+#custCarousel .carousel-indicators {
+    position: static;
+    margin-top: 20px;
+    flex-wrap: wrap;
+    list-style-type: none;
+    padding-left: 0;
+
+}
+#custCarousel .carousel-indicators>li {
+    width: 100px;
+    margin-bottom: 80px;
+
+}
+#custCarousel .carousel-indicators li img {
+    display: block;
+    max-width: 100%;  
+}
+#custCarousel .carousel-indicators li.active img {
+    border: 2px solid grey;
+}
+.carousel-item img {
+    width: 80%
+}
+@media screen and (max-width: 800px){
+    .carousel-inner{
+        width:450px;
+        height: 650px;
+        margin: 0 auto;
+    }
+}
+ol.flex-control-nav li:hover a, ol.flex-control-nav li a.flex-active {
+    background-color: #383838;
+}
+ol.flex-control-nav li a {
+    border: 1px solid #383838;
+}
+@media screen and (min-width:480px){
+#wowslider-container1 {
+    height: 700px;
+    }
+}

@@ -15,7 +15,7 @@
 	<link rel="stylesheet" href="assets/css/magnific-popup.css" type="text/css" />
 	<link rel="stylesheet" href="assets/css/custom.css" type="text/css" />
 	<link rel="stylesheet" href="assets/lab1.css" type="text/css" />
-	<!-- <link rel="stylesheet" href="assets/css/holidaycards.css" type="text/css" /> -->
+	<link rel="stylesheet" href="styles.css" type="text/css" /> 
 
 
 
@@ -39,80 +39,9 @@
 	<meta name="twitter:image" content=" https://myclone.page/images/og-color-logo-ethanaart.jpg" />
 	<link rel="shortcut icon" href="/favicon.ico" />
 	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-130204150-1"></script>
-	<script>
-		window.dataLayer = window.dataLayer || [];
-			function gtag(){dataLayer.push(arguments);}
-			gtag('js', new Date());
-
-			gtag('config', 'UA-130204150-1');
-
-	// init Masonry
-	var $grid = $('.grid').masonry({
-		itemSelector: '.grid-item',
-		percentPosition: true,
-		columnWidth: '.grid-sizer'
-	});
-
-	// layout Masonry after each image loads
-	$grid.imagesLoaded().progress( function() {
-		$grid.masonry();
-	});
-	</script>
+	
 <style>
-	.side-header #logo img {
-		height: auto !important;
-	}
-    <style>
-	.side-header #logo img {
-		height: auto !important;
-	}
-	.carousel-control-next-icon, 
-	.carousel-control-prev-icon{
-		filter: invert(1);
-	} 
-	.carousel-control-prev,
-	.carousel-control-next{
-		height: 50%;
-	}
-	.carousel-inner{
-		width:700px;
-		height: auto;
-		margin: 0 auto;
-	}
-	#custCarousel{
-		margin-top: 20px;
-	}
-
-	#custCarousel .carousel-indicators {
-		position: static;
-		margin-top: 20px;
-		flex-wrap: wrap;
-		list-style-type: none;
-		padding-left: 0;
-
-	}
-	#custCarousel .carousel-indicators>li {
-		width: 100px;
-		margin-bottom: 80px;
-
-	}
-	#custCarousel .carousel-indicators li img {
-		display: block;
-		max-width: 100%;  
-	}
-	#custCarousel .carousel-indicators li.active img {
-		border: 2px solid grey;
-	}
-	.carousel-item img {
-		width: 80%
-	}
-	@media screen and (max-width: 800px){
-		.carousel-inner{
-			width:450px;
-			height: 650px;
-			margin: 0 auto;
-		}
-	}
+	
 	</style>
 	</style>
 </head>
@@ -528,23 +457,5 @@
     <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-
-	<style>
-		ol.flex-control-nav li:hover a, ol.flex-control-nav li a.flex-active {
-		    background-color: #383838;
-		}
-		ol.flex-control-nav li a {
-		    border: 1px solid #383838;
-		}
-		@media screen and (min-width:480px){
-		#wowslider-container1 {
-		    height: 700px;
-			}
-		}
-	</style>
-	<!--disable right click and copy & paste-->
-	<script type="text/javascript">
-		$(document).ready(function(){$("body").bind("cut copy paste",function(n){n.preventDefault()}),$("body").on("contextmenu",function(n){return!1})});
-
-	</script>
+	<script src="project1.js"></script>
 </body>
