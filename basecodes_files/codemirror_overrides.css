@@ -1,0 +1,9 @@
+@font-face{font-family:appleLogo;src:local("Lucida Grande");unicode-range:U+F8FF}
+.CodeMirror{font-family:Monaco,Menlo,Consolas,'Courier New',monospace!important;border:1px solid rgba(29,28,29,.5);border-radius:6px;color:#1d1c1d;background-color:#fff;height:auto;-webkit-transform:translateY(0);-moz-transform:translateY(0);-ms-transform:translateY(0);transform:translateY(0);will-change:transform}
+.CodeMirror pre{-moz-border-radius:0;-webkit-border-radius:0;border-radius:0;border-width:0;background:0 0;font-family:inherit;font-size:inherit;margin:0;white-space:pre;word-wrap:normal;line-height:inherit;color:inherit;z-index:2;position:relative;overflow:visible;-webkit-tap-highlight-color:transparent;-webkit-font-variant-ligatures:contextual;font-variant-ligatures:contextual;padding:0 4px}
+.CodeMirror .CodeMirror-sizer{font-size:13px!important;line-height:1.5}
+.CodeMirror .CodeMirror-gutters{background-color:#fbfbfb;border-color:#ebebeb}
+.CodeMirror .CodeMirror-code{font-size:.8rem}
+.CodeMirror .CodeMirror-linenumber{color:rgba(29,28,29,.7)}
+.CodeMirror:focus,.CodeMirror:hover{border-color:rgba(29,28,29,.7)}
+#file_page .CodeMirror,#snippet_dialog .CodeMirror{height:12rem}
